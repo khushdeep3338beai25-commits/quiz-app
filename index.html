@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SCREEN 1 : Starting -->
+     <div class="screen mainscreen" id="start-screen">
+        <div class="card">
+            <img class="banner-image" src="image/chick.png" alt="javascript">
+            <h1>Let's Test Your Tech Knowledge</h1>
+            <h2>Test your skills in HTML, CSS, and JavaScript</h2>
+            <p class="quiz-info">BE READY</p>
+            <button class="btn" id="start-btn">Start Quiz</button>
+        </div>
+     </div>
+
+
+     <!-- ADD SCREEN SELECT SUBJECT -->
+      <div class="screen hidden" id="subject-screen">
+        <div class="subjectcard" id="gk-card">
+            <h1>General Knowledge</h1>
+        </div>
+        <div class="subjectcard" id="html-card">
+            <h1>HTML</h1>
+        </div>
+        <div class="subjectcard" id="css-card">
+            <h1>CSS</h1>
+        </div>
+
+        <div class="subjectcard" id="javascript-card">
+            <h1>Javascript</h1>
+        </div>
+        
+      </div>
+
+     <!-- SCREEN 2 : Question screen -->
+      <div class="screen hidden" id="question-screen">
+        <div class="card">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+                <div class="timer-container">Time Left: <span id="time">15</span>s</div> 
+                <p class="question-count" id="question-count">Question 1 of 10</p>
+                <h2 class="question-text" id="question-text">Question goes here</h2>
+                <div class="options" id="option-container"></div>
+                <button class="btn" id="next-btn">Next question</button>
+
+        </div>
+      </div>
+
+      <!-- SCREEN 3: RESULT SCREEN -->
+       <div class="screen hidden" id="result-screen">
+        <div class="card">
+            <div class="result-emoji" id="result-emoji">⚡️</div>
+            <h1 class="result-title" id="result-title">Well Done!</h1>
+            <p class="result-score" id="result-score">Your Scored 10 out of 10!</p>
+            <p class="result-msg" id="result-msg">Great!</p>
+            <button class="btn" id="restart-btn">Try Again</button>
+        </div>
+       </div>
+       <script src="script.js"></script>
+
+</body>
+</html>
